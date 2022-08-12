@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var n1 = document.kirim.n1.value;
+    var n2 = document.kirim.n2.value;
+
+
+    function hasil1() {
+
+        var r = n1 + n2
+        document.kirim.result.value = r
+
+    }
+    function hasil2() {
+        r = n1 - n2
+        document.tabel.nilai.result.value = r;
+    }
+    function hasil3() {
+        r = n1 * n2
+        document.tabel.nilai.result.value = r;
+    }
+    function hasil4() {
+        r = n1 / n2
+        document.tabel.nilai.result.value = r;
+    }
+
+
+
+</script>
+
+<body>
+    <form method="post" name="kirim">
+        <p>Bilangan 1 <input type="text" name="n1" size="20px"><br></p>
+        <p>Bilangan 2 <input type="text" name="n2" size="20px"><br></p>
+        <p><input type="button" value="+" name="B1" onclick=hasil1()></p>
+        <p>Merupakan Bilangan <input type="text" name="result" size="20"></p>
+    </form>
+</body>
+
+</html>

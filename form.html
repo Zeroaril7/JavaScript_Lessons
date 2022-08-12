@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function test() {
+        var a = document.kirim.T1.value
+        if (a % 2 == 0) {
+            document.kirim.T2.value = a
+        } else {
+            document.write("Bilangan ganjil")
+        }
+    }
+
+    function ubahWarnaLB(warna) {
+        document.bgColor = warna
+    }
+    function ubahWarnaLD(warna) {
+        document.fgColor = warna
+    }
+</script>
+
+<body>
+    <form method="post" name="kirim">
+        <p>Bilangan <input type="text" name="T1" size="20px"><br></p>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+        <p>Merupakan Bilangan <input type="text" name="T2" size="20"></p>
+    </form>
+
+    <h1>TEST</h1>
+    <form>
+        <input type="button" value="LBH" onclick=ubahWarnaLB("GREEN")>
+        <input type="button" value="LBW" onclick=ubahWarnaLB("WHITE")>
+        <input type="button" value="LBS" onclick=ubahWarnaLB("SALMON")>
+        <input type="button" value="LDY" onclick=ubahWarnaLD("YELLOW")>
+        <input type="button" value="LDB" onclick=ubahWarnaLD("BLUE")>
+        <input type="button" value="LDS" onclick=ubahWarnaLD("SILVER")>
+
+    </form>
+</body>
+
+</html>
